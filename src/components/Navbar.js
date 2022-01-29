@@ -2,12 +2,13 @@ import { click } from '@testing-library/user-event/dist/click';
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
 import { Button } from './Button';
-import './Navbar.css'
+import './Navbar.css';
+
 
 
 function Navbar() {
   const [click, setClick]= useState(false);
-  const [button, setButton]= useState(false);
+  const [button, setButton]= useState(true);
 
 
   const handleClick = () => setClick(!click);
@@ -19,7 +20,8 @@ function Navbar() {
       setButton(true);
     }
   }
-
+  // it invoke the show button function
+window.addEventListener('resize', showButton)
   return (
     <div>
       <nav className='navbar'>
@@ -52,6 +54,7 @@ function Navbar() {
                 </Link>
             </li>
           </ul>
+          {/* it means if the button is true, then show the button */}
           {button && <Button buttonStyle='btn--outline' >
             SIGN UP
           </Button>}
