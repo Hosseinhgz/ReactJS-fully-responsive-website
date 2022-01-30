@@ -1,5 +1,5 @@
 import { click } from '@testing-library/user-event/dist/click';
-import React, {useState} from 'react';
+import React, {useState , useEffect} from 'react';
 import { Link } from 'react-router-dom'
 import { Button } from './Button';
 import './Navbar.css';
@@ -13,6 +13,7 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false)
+
   const showButton = () => {
     if (window.innerWidth <= 960){
       setButton(false);
@@ -21,7 +22,12 @@ function Navbar() {
     }
   }
   // it invoke the show button function
-window.addEventListener('resize', showButton)
+  window.addEventListener('resize', showButton)
+  useEffect(() => {
+    showButton();
+  }, []);
+
+
   return (
     <div>
       <nav className='navbar'>
@@ -55,9 +61,7 @@ window.addEventListener('resize', showButton)
             </li>
           </ul>
           {/* it means if the button is true, then show the button */}
-          {button && <Button buttonStyle='btn--outline' >
-            SIGN UP
-          </Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </div>
