@@ -25,7 +25,9 @@ function Navbar() {
   useEffect(() => {
     showButton();
   }, []);
-
+  useEffect(() => {
+    showButton();
+  }, []);
 
   return (
     <>
@@ -53,6 +55,11 @@ function Navbar() {
                 Products
                 </Link>
             </li>
+            {!button && <li className='nav-item' >
+              <Link to="/sign-up" className='nav-links' onClick={closeMobileMenu}>
+                Sign Up
+                </Link>
+            </li>}
           </ul>
           {/* it means if the button is true, then show the button */}
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
