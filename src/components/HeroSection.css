@@ -8,7 +8,7 @@ video {
 
 .hero-container{
   /* background: url('images/img-home.jpg') center center/cover no-repeat; */
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ video {
   margin-top: 32px;
 }
 .hero-btns .btn {
-  margin-top: 15px;
+  margin: 20px 3px 0px 3px ;
 }
 .fa-play-circle {
   margin-left: 32px;
