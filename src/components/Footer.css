@@ -6,3 +6,105 @@
   justify-content: center;
   align-items: center;
 }
+.footer-subscription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 24px;
+  color:aliceblue;
+}
+.footer-subscription > p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-subscription-heading{
+  margin-bottom: 26px;
+  font-size: 24px;
+}
+.footer-subscription-text{
+  margin-bottom:22px;
+  font-size: 18px;
+}
+.footer-input{
+  padding: 10px 22px;
+  border-radius: 3px;
+  margin-right: 12px;
+  outline: none;
+  border:none;
+  font-size: 17px;
+  margin-bottom: 18px;
+  border: 1px solid #fff;
+}
+
+.footer-link{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.footer-link-wrapper{
+  display: flex;
+}
+.footer-link-items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 18px;
+  text-align: center;
+  width: 160px;
+  box-sizing: border-box;
+
+}
+.footer-link-items h2 {
+  color:#fff;
+}
+.footer-link-items a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-link-items a:hover{
+  color: #d8d8d8;
+  transition: 0.3s ease-in;
+}
+
+.footer-input::placeholder{
+  color: #c2c2c2;
+}
+
+/* Social media icons design*/
+.social-icon-link{
+  color: #c3c3c3;
+  font-size: 22px;
+}
+.social-media{
+  max-width: 1000px;
+  width: 100%;
+}
+.social-media-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+.social-logo{
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-self: center;
+  margin-bottom: 18px;
+}
